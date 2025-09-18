@@ -18,6 +18,8 @@ jobs:
           run: npm clean-install
         - name: Install Test dependencies
           run: npm install -D vitest
+        - name: Install Coverage
+          run: npm install -D @vitest/coverage-v8
         - name: Build
           run: npm run build
         - name: Lint
